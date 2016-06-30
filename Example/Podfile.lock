@@ -1,0 +1,16 @@
+PODS:
+  - SidePanel (0.1.0)
+
+DEPENDENCIES:
+  - SidePanel (from `../`)
+
+EXTERNAL SOURCES:
+  SidePanel:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SidePanel: 9d5b96b5c8152e5611b88c9a79300889d98b9a9e
+
+PODFILE CHECKSUM: c21d592bd12d512487fe1f63e538320571dfa333
+
+COCOAPODS: 1.0.1
