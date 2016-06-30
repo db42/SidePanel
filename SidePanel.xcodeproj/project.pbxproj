@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D94BE1CF1CCEBFD80042282A /* PROJECT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D94BE1CE1CCEBFD80042282A /* PROJECT.swift */; };
+		10F4F74D1D25028D003713C3 /* SidePanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4F74C1D25028D003713C3 /* SidePanelController.swift */; };
 		D9E066921CCECB3200E0D7CB /* wk.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E066861CCECB3200E0D7CB /* wk.png */; };
 		D9FEF4BF1CCEBC0F0013FBDD /* PROJECT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FEF4B41CCEBC0D0013FBDD /* PROJECT.framework */; };
 		D9FEF4C41CCEBC100013FBDD /* PROJECTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FEF4C31CCEBC100013FBDD /* PROJECTTests.swift */; };
@@ -24,7 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D94BE1CE1CCEBFD80042282A /* PROJECT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PROJECT.swift; sourceTree = "<group>"; };
+		10F4F74C1D25028D003713C3 /* SidePanelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelController.swift; sourceTree = "<group>"; };
 		D9E066861CCECB3200E0D7CB /* wk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wk.png; sourceTree = "<group>"; };
 		D9FEF4B41CCEBC0D0013FBDD /* PROJECT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PROJECT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FEF4B91CCEBC0D0013FBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		D9FEF4B61CCEBC0D0013FBDD /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D94BE1CE1CCEBFD80042282A /* PROJECT.swift */,
+				10F4F74C1D25028D003713C3 /* SidePanelController.swift */,
 				D9FEF4B91CCEBC0D0013FBDD /* Info.plist */,
 			);
 			path = Source;
@@ -154,7 +154,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = "PROJECT_OWNER";
+				ORGANIZATIONNAME = PROJECT_OWNER;
 				TargetAttributes = {
 					D9FEF4B31CCEBC0D0013FBDD = {
 						CreatedOnToolsVersion = 7.3;
@@ -164,7 +164,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "PROJECT" */;
+			buildConfigurationList = D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "SidePanel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -205,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D94BE1CF1CCEBFD80042282A /* PROJECT.swift in Sources */,
+				10F4F74D1D25028D003713C3 /* SidePanelController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "PROJECT" */ = {
+		D9FEF4AE1CCEBC0D0013FBDD /* Build configuration list for PBXProject "SidePanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9FEF4C61CCEBC100013FBDD /* Debug */,

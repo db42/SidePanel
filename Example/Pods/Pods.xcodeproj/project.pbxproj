@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		019B7D97D90C73A9E1F503B23721C69E /* SidePanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB5E85D95C808BBC49C45B3DA4EF063 /* SidePanelController.swift */; };
 		0890648A65F4CBDAD8B634B59D719B49 /* Pods-iOS Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7755A1A15B96261E4500B17963ABA3FC /* Pods-iOS Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1796A5E40C215A5D33F4779FC2382178 /* SidePanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A332F0D1AFF682B6808F64AE36F78428 /* SidePanel-dummy.m */; };
 		2BCA6F3D408FA92C2E83C429693647F8 /* Pods-iOS Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E398D5B414B7EC856AB604DA366D614D /* Pods-iOS Example-dummy.m */; };
 		47674917C28355A06BE296196712A849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		51EA83C5238231298C895A4F687E0486 /* SidePanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AEF2D5B3D27C67ABB65CE1F7E89CF16 /* SidePanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -15,10 +17,8 @@
 		756A5038DA55E2BF91264FD4CBE20FFB /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C36F63E28621802F8BF9AC8562E2ABB7 /* Pods-Tests-dummy.m */; };
 		85082001056B72D85E075EB08DAEBACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		865E70049CBE20B2E95197E3D6AF0AF3 /* SidePanel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A56F2F339A50C42ED7291FF8A0859AF /* SidePanel.bundle */; };
-		95AEECCA8C65DFD72F532190BD7CF837 /* SidePanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A332F0D1AFF682B6808F64AE36F78428 /* SidePanel-dummy.m */; };
 		A6D72CE60863CEC436A6F0FEA3D32A4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		CDD4DCFD056414632AC893135BA92281 /* wk.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0AF5829750BD4CCAA9FBFEE6E66F4 /* wk.png */; };
-		F56A6C1C9FA378F86FB408802A181979 /* PROJECT.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7333E578CD574D1187374F7E4299D0A /* PROJECT.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,6 @@
 		94F65912178454153DDE3E4329793412 /* SidePanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SidePanel.xcconfig; sourceTree = "<group>"; };
 		9DE9BF4A01E6EA869B8389FFEB811D4F /* SidePanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SidePanel.modulemap; sourceTree = "<group>"; };
 		A332F0D1AFF682B6808F64AE36F78428 /* SidePanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SidePanel-dummy.m"; sourceTree = "<group>"; };
-		A7333E578CD574D1187374F7E4299D0A /* PROJECT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PROJECT.swift; sourceTree = "<group>"; };
 		A7FB37520416B52EA5AB806E9DCDE098 /* Pods-iOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A8C2707B5058786EE568EACFBD78A764 /* Pods_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B024591A68BB6EF7484A3BBFB870032C /* Pods-iOS Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -72,6 +71,7 @@
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D691D5A8365B545E33515B0CF5E426A5 /* ResourceBundle-SidePanel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SidePanel-Info.plist"; sourceTree = "<group>"; };
 		DBED60C02AD1D19F728B7C61F9F73255 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DEB5E85D95C808BBC49C45B3DA4EF063 /* SidePanelController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SidePanelController.swift; sourceTree = "<group>"; };
 		E057BA85FA554E8CCEF4C90ACF8A5453 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E398D5B414B7EC856AB604DA366D614D /* Pods-iOS Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS Example-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03275B662EE8682031FD972D9D0FD7B7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DEB5E85D95C808BBC49C45B3DA4EF063 /* SidePanelController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,7 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				E9AF62AFC011EE96DC404314889B927A /* Resources */,
-				EEC4AA15CDB41E845E758053DCBF1109 /* Source */,
+				03275B662EE8682031FD972D9D0FD7B7 /* Source */,
 				F9A2944979B6847AFA418F339D5A8C5B /* Support Files */,
 			);
 			name = SidePanel;
@@ -227,14 +235,6 @@
 				73AB4FF8D4C4C72BFE64FB0AEE65EEEB /* SidePanel */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		EEC4AA15CDB41E845E758053DCBF1109 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				A7333E578CD574D1187374F7E4299D0A /* PROJECT.swift */,
-			);
-			path = Source;
 			sourceTree = "<group>";
 		};
 		F9A2944979B6847AFA418F339D5A8C5B /* Support Files */ = {
@@ -304,7 +304,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14B569ADE8A0EE9FB0747C98CFD4C0CD /* Build configuration list for PBXNativeTarget "SidePanel" */;
 			buildPhases = (
-				7EDD5320BBB6595362DF21E67883074E /* Sources */,
+				0A76B1FEB035166635BF9F24270A6159 /* Sources */,
 				8CCD50D034FCA5C29F994ADEECC88132 /* Frameworks */,
 				A7AA8D71653ADC653E02AF7FE6C26354 /* Resources */,
 				0E57698C776C98CE499408004EE64A62 /* Headers */,
@@ -402,20 +402,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0A76B1FEB035166635BF9F24270A6159 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1796A5E40C215A5D33F4779FC2382178 /* SidePanel-dummy.m in Sources */,
+				019B7D97D90C73A9E1F503B23721C69E /* SidePanelController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0FA501325ABB56A4FA09D7D2EBFB2E8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2BCA6F3D408FA92C2E83C429693647F8 /* Pods-iOS Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7EDD5320BBB6595362DF21E67883074E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F56A6C1C9FA378F86FB408802A181979 /* PROJECT.swift in Sources */,
-				95AEECCA8C65DFD72F532190BD7CF837 /* SidePanel-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
