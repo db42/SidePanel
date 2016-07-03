@@ -20,14 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
-    let svc = MySidePanelController()
     let sb = UIStoryboard(name: "Main", bundle: nil)
     vc1 = UINavigationController(rootViewController: sb.instantiateViewControllerWithIdentifier("ViewController"))
     vc2 = UINavigationController(rootViewController: sb.instantiateViewControllerWithIdentifier("ViewController2"))
     let sc = sb.instantiateViewControllerWithIdentifier("SideViewController")
     
+    let svc = MySidePanelController(sideController: sc)
     svc.selectedViewController = vc1
-    svc.sideController = sc
     
     self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
     self.window?.rootViewController = svc

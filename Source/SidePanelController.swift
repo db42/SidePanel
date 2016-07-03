@@ -23,7 +23,7 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
   }
   
 
-  public var sideController: UIViewController?
+  let sideController: UIViewController
   public var sidePanelWidth: CGFloat = 320.0
   
   private weak var sidePanelView: UIView!
@@ -33,8 +33,8 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
   private var shouldHideSidePanel = false
   
   func updateSelectedViewcontroller() {
-    if let navController = selectedViewController as? UINavigationController,
-      navItem = navController.topViewController?.navigationItem where
+    let mainViewController = (selectedViewController as? UINavigationController)?.topViewController ?? selectedViewController
+    if let navItem = mainViewController?.navigationItem where
       navItem.leftBarButtonItem == nil {
       let button = self.leftButton()
       button.addTarget(self, action: #selector(showSidePanel), forControlEvents: .TouchUpInside)
@@ -60,13 +60,11 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
     super.viewDidLoad()
     updateSelectedViewcontroller()
 
-    if let sc = self.sideController {
-      addChildViewController(sc)
-      sc.view.autoresizingMask = .None
-      sc.view.frame = sidePanelView.bounds
-      sidePanelView.addSubview(sc.view)
-      sc.didMoveToParentViewController(self)
-    }
+    addChildViewController(sideController)
+    sideController.view.autoresizingMask = .None
+    sideController.view.frame = sidePanelView.bounds
+    sidePanelView.addSubview(sideController.view)
+    sideController.didMoveToParentViewController(self)
     
     let leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture(_:)))
     leftSwipeGesture.direction = .Left
@@ -90,7 +88,7 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
       return
     }
     
-    print(" \(panGestureRecognizer.state.rawValue), \(panGestureRecognizer.velocityInView(self.view).x)")
+//    print(" \(panGestureRecognizer.state.rawValue), \(panGestureRecognizer.velocityInView(self.view).x)")
     
     let frame = sidePanelView.frame
     switch panGestureRecognizer.state {
@@ -139,7 +137,8 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
     }
   }
 
-  public init() {
+  public init(sideController: UIViewController) {
+    self.sideController = sideController
     super.init(nibName: nil, bundle: NSBundle.mainBundle())
   }
   

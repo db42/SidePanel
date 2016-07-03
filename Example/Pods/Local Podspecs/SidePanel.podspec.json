@@ -5,14 +5,14 @@
     "type": "MIT",
     "file": "LICENSE"
   },
-  "summary": "A short description of SidePanel.",
+  "summary": "Google styled sidepanel written in swift",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/SidePanel",
+  "homepage": "https://github.com/db42/SidePanel",
   "authors": {
-    "SidePanel_OWNER": "USER_EMAIL"
+    "Dushyant Bansal": "dushyant37@gmail.com"
   },
   "source": {
-    "git": "https://github.com/GITHUB_USERNAME/SidePanel.git",
+    "git": "https://github.com/db42/SidePanel.git",
     "tag": "0.1.0"
   },
   "platforms": {
