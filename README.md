@@ -63,6 +63,49 @@ github "fulldecent/SidePanel" ~> 0.1
 
 Run `carthage update` to build the framework and drag the built `SidePanel.framework` into your Xcode project.
 
+## Usage
+
+```swift
+//Override SidePanelController to provide a custom hamburger menu icon
+class MySidePanelController: SidePanelController {
+  override func leftButton() -> UIButton {
+    let frame = CGRectMake(0, 0, 20, 20)
+    let button = UIButton(frame: frame)
+    button.setImage(UIImage(named: "menu"), forState: .Normal)
+    return button
+  }
+}
+
+//Initialise SidePanelController - AppDelegate.swift
+var sidePanelController: SidePanelController?
+var mainVC1: UINavigationController?
+var mainVC2: UINavigationController?
+
+func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+  ....
+  let mainVC1 = MainViewController()
+  let sc = SideController()
+  let sidePanelController = MySidePanelController(sideController: sc)
+  sidePanelController.selectedViewController = mainVC1
+  
+  self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+  self.window?.rootViewController = svc
+  self.window?.makeKeyAndVisible()
+  self.sidePanelController = sidePanelController
+  ....
+}
+
+//Handle navigation from SideController - SideViewController.swift
+class SideViewController: UITableViewController {
+override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+      let vc = indexPath.row == 0 ? appDelegate.mainVC1 : appDelegate.mainVC2
+      appDelegate.sidePanelController?.selectedViewController = vc
+    }
+  }
+}
+```
+
 
 ## Author
 
