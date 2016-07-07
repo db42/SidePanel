@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		019B7D97D90C73A9E1F503B23721C69E /* SidePanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB5E85D95C808BBC49C45B3DA4EF063 /* SidePanelController.swift */; };
 		0890648A65F4CBDAD8B634B59D719B49 /* Pods-iOS Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7755A1A15B96261E4500B17963ABA3FC /* Pods-iOS Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1796A5E40C215A5D33F4779FC2382178 /* SidePanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A332F0D1AFF682B6808F64AE36F78428 /* SidePanel-dummy.m */; };
 		2BCA6F3D408FA92C2E83C429693647F8 /* Pods-iOS Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E398D5B414B7EC856AB604DA366D614D /* Pods-iOS Example-dummy.m */; };
 		47674917C28355A06BE296196712A849 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		51EA83C5238231298C895A4F687E0486 /* SidePanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AEF2D5B3D27C67ABB65CE1F7E89CF16 /* SidePanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51EA83C5238231298C895A4F687E0486 /* SidePanel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15F132F5C4C1FA37329192643D33FC14 /* SidePanel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C515FC62E5D1620C95EE7CED3276D19 /* wk.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A520CBEF1EB83E0ABAD99841DC628A9 /* wk.png */; };
 		70FC235EB9136DFFEFB40BA1E296144E /* Pods-Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87827174BADAB191862972C3C2145500 /* Pods-Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		756A5038DA55E2BF91264FD4CBE20FFB /* Pods-Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C36F63E28621802F8BF9AC8562E2ABB7 /* Pods-Tests-dummy.m */; };
+		783677F224C73F04D12F86AEC0C2C39E /* SidePanel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BBAB1AE15E0811A98F7CA4029D544F /* SidePanel-dummy.m */; };
 		85082001056B72D85E075EB08DAEBACC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		865E70049CBE20B2E95197E3D6AF0AF3 /* SidePanel.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7A56F2F339A50C42ED7291FF8A0859AF /* SidePanel.bundle */; };
 		A6D72CE60863CEC436A6F0FEA3D32A4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		CDD4DCFD056414632AC893135BA92281 /* wk.png in Resources */ = {isa = PBXBuildFile; fileRef = 34C0AF5829750BD4CCAA9FBFEE6E66F4 /* wk.png */; };
+		F2D4287914DF1EDC0A2E86146B5DC785 /* SidePanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B52621263F54F212C9CA1BE45BDC3A7 /* SidePanelController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,15 +41,18 @@
 /* Begin PBXFileReference section */
 		03D76FD1D2D61400518852553FB83B15 /* Pods-Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Tests.modulemap"; sourceTree = "<group>"; };
 		10B3EE87E596C0A5EDE4942883C1ADC1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1518FBE954F8E10A7EF6906E0A9B23D2 /* SidePanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SidePanel-prefix.pch"; sourceTree = "<group>"; };
+		15F132F5C4C1FA37329192643D33FC14 /* SidePanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SidePanel-umbrella.h"; sourceTree = "<group>"; };
 		1F5585E0FCC9A0E778738B8056865F03 /* Pods-Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		34C0AF5829750BD4CCAA9FBFEE6E66F4 /* wk.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = wk.png; sourceTree = "<group>"; };
 		3AFD69FD6609D8561766574A1BA97DAD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		440A233B4C083997C5230AD47337C477 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4EC683848B668D3371601CC9DDD25E93 /* Pods-iOS Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOS Example.modulemap"; sourceTree = "<group>"; };
 		51CCD9B5635D272B0887E5C65BC8DB0F /* Pods-iOS Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS Example-resources.sh"; sourceTree = "<group>"; };
+		54841FCEDE5D548F3565CD32FFFDEB86 /* SidePanel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SidePanel-prefix.pch"; sourceTree = "<group>"; };
 		562C33645088568EC1E044FC07163591 /* Pods_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A520CBEF1EB83E0ABAD99841DC628A9 /* wk.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = wk.png; path = Resources/wk.png; sourceTree = "<group>"; };
+		65B5EDBFD597C7D76C063929F8C8ACCF /* SidePanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SidePanel.xcconfig; sourceTree = "<group>"; };
 		68B478C6331F8E0EA3CE764529A7EAC2 /* Pods-iOS Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOS Example-frameworks.sh"; sourceTree = "<group>"; };
+		6B52621263F54F212C9CA1BE45BDC3A7 /* SidePanelController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SidePanelController.swift; path = Source/SidePanelController.swift; sourceTree = "<group>"; };
 		73D6B185D0DA907CB400DE565CA2C7F5 /* Pods-Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7755A1A15B96261E4500B17963ABA3FC /* Pods-iOS Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOS Example-umbrella.h"; sourceTree = "<group>"; };
 		7A56F2F339A50C42ED7291FF8A0859AF /* SidePanel.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SidePanel.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,11 +60,9 @@
 		7B560C7260CACEBE9B0767FC32D36F31 /* Pods-iOS Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Example.release.xcconfig"; sourceTree = "<group>"; };
 		87827174BADAB191862972C3C2145500 /* Pods-Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Tests-umbrella.h"; sourceTree = "<group>"; };
 		8849E9F4E352A686E5639B73F61DE0FC /* Pods-Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Tests-frameworks.sh"; sourceTree = "<group>"; };
-		8AEF2D5B3D27C67ABB65CE1F7E89CF16 /* SidePanel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SidePanel-umbrella.h"; sourceTree = "<group>"; };
+		937575D0729D73AD994642D7B96FB68B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94F65912178454153DDE3E4329793412 /* SidePanel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SidePanel.xcconfig; sourceTree = "<group>"; };
-		9DE9BF4A01E6EA869B8389FFEB811D4F /* SidePanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SidePanel.modulemap; sourceTree = "<group>"; };
-		A332F0D1AFF682B6808F64AE36F78428 /* SidePanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SidePanel-dummy.m"; sourceTree = "<group>"; };
+		97BBAB1AE15E0811A98F7CA4029D544F /* SidePanel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SidePanel-dummy.m"; sourceTree = "<group>"; };
 		A7FB37520416B52EA5AB806E9DCDE098 /* Pods-iOS Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOS Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A8C2707B5058786EE568EACFBD78A764 /* Pods_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B024591A68BB6EF7484A3BBFB870032C /* Pods-iOS Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOS Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -69,11 +70,10 @@
 		C36F63E28621802F8BF9AC8562E2ABB7 /* Pods-Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Tests-dummy.m"; sourceTree = "<group>"; };
 		CDDBD80CFDDF60199A02A09F9B57F75F /* SidePanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SidePanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D691D5A8365B545E33515B0CF5E426A5 /* ResourceBundle-SidePanel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SidePanel-Info.plist"; sourceTree = "<group>"; };
+		D95017509AB4E12B8D39163936EDE530 /* ResourceBundle-SidePanel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-SidePanel-Info.plist"; sourceTree = "<group>"; };
 		DBED60C02AD1D19F728B7C61F9F73255 /* Pods-Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		DEB5E85D95C808BBC49C45B3DA4EF063 /* SidePanelController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SidePanelController.swift; sourceTree = "<group>"; };
-		E057BA85FA554E8CCEF4C90ACF8A5453 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E398D5B414B7EC856AB604DA366D614D /* Pods-iOS Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOS Example-dummy.m"; sourceTree = "<group>"; };
+		EFE4781FD6564A7AD5564A1036B6E7A5 /* SidePanel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SidePanel.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,20 +111,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03275B662EE8682031FD972D9D0FD7B7 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				DEB5E85D95C808BBC49C45B3DA4EF063 /* SidePanelController.swift */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		415C38B8E677B28E7FB49018AAD1D71B /* SidePanel */ = {
+			isa = PBXGroup;
+			children = (
+				6B52621263F54F212C9CA1BE45BDC3A7 /* SidePanelController.swift */,
+				ED143B7B501A9DF8A041307F8CA15AF9 /* Resources */,
+				67446C06EBE574BB631DEBCFFF7FB883 /* Support Files */,
+			);
+			path = SidePanel;
 			sourceTree = "<group>";
 		};
 		49BBF43E9C363B393D583A638EB30E91 /* Pods-Tests */ = {
@@ -174,23 +176,35 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		73AB4FF8D4C4C72BFE64FB0AEE65EEEB /* SidePanel */ = {
+		5CCA1B51625C74C6FA2E8EC39AFF23FC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E9AF62AFC011EE96DC404314889B927A /* Resources */,
-				03275B662EE8682031FD972D9D0FD7B7 /* Source */,
-				F9A2944979B6847AFA418F339D5A8C5B /* Support Files */,
+				415C38B8E677B28E7FB49018AAD1D71B /* SidePanel */,
 			);
-			name = SidePanel;
-			path = ../..;
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		67446C06EBE574BB631DEBCFFF7FB883 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				937575D0729D73AD994642D7B96FB68B /* Info.plist */,
+				D95017509AB4E12B8D39163936EDE530 /* ResourceBundle-SidePanel-Info.plist */,
+				EFE4781FD6564A7AD5564A1036B6E7A5 /* SidePanel.modulemap */,
+				65B5EDBFD597C7D76C063929F8C8ACCF /* SidePanel.xcconfig */,
+				97BBAB1AE15E0811A98F7CA4029D544F /* SidePanel-dummy.m */,
+				54841FCEDE5D548F3565CD32FFFDEB86 /* SidePanel-prefix.pch */,
+				15F132F5C4C1FA37329192643D33FC14 /* SidePanel-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SidePanel";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E9E92E468D8570B4AD2093A4828DD613 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				5CCA1B51625C74C6FA2E8EC39AFF23FC /* Pods */,
 				5AB5429C54A8DF492DAA6A9CADE59804 /* Products */,
 				D32BE934337E0571D80FEA19121C9A70 /* Targets Support Files */,
 			);
@@ -204,14 +218,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C1E32F915BF95F253FFBFD0CB4B3EB1E /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				34C0AF5829750BD4CCAA9FBFEE6E66F4 /* wk.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		D32BE934337E0571D80FEA19121C9A70 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,35 +227,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E9AF62AFC011EE96DC404314889B927A /* Resources */ = {
+		ED143B7B501A9DF8A041307F8CA15AF9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C1E32F915BF95F253FFBFD0CB4B3EB1E /* Resources */,
+				5A520CBEF1EB83E0ABAD99841DC628A9 /* wk.png */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
-		};
-		E9E92E468D8570B4AD2093A4828DD613 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				73AB4FF8D4C4C72BFE64FB0AEE65EEEB /* SidePanel */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		F9A2944979B6847AFA418F339D5A8C5B /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E057BA85FA554E8CCEF4C90ACF8A5453 /* Info.plist */,
-				D691D5A8365B545E33515B0CF5E426A5 /* ResourceBundle-SidePanel-Info.plist */,
-				9DE9BF4A01E6EA869B8389FFEB811D4F /* SidePanel.modulemap */,
-				94F65912178454153DDE3E4329793412 /* SidePanel.xcconfig */,
-				A332F0D1AFF682B6808F64AE36F78428 /* SidePanel-dummy.m */,
-				1518FBE954F8E10A7EF6906E0A9B23D2 /* SidePanel-prefix.pch */,
-				8AEF2D5B3D27C67ABB65CE1F7E89CF16 /* SidePanel-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SidePanel";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +287,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 14B569ADE8A0EE9FB0747C98CFD4C0CD /* Build configuration list for PBXNativeTarget "SidePanel" */;
 			buildPhases = (
-				0A76B1FEB035166635BF9F24270A6159 /* Sources */,
+				1AB587BA5DF42026417F3AFBD5CC5BB3 /* Sources */,
 				8CCD50D034FCA5C29F994ADEECC88132 /* Frameworks */,
 				A7AA8D71653ADC653E02AF7FE6C26354 /* Resources */,
 				0E57698C776C98CE499408004EE64A62 /* Headers */,
@@ -342,7 +325,7 @@
 			buildPhases = (
 				C88EAAADC2C8EE6286011A5CF1163A82 /* Sources */,
 				AF6ABD076582EC71E3E05FCFDDB71D83 /* Frameworks */,
-				376A63AF4470A2349CFC47BC9B4C8899 /* Resources */,
+				2B99D7F131D14532F4D489370CE5EB04 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -383,11 +366,11 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		376A63AF4470A2349CFC47BC9B4C8899 /* Resources */ = {
+		2B99D7F131D14532F4D489370CE5EB04 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDD4DCFD056414632AC893135BA92281 /* wk.png in Resources */,
+				6C515FC62E5D1620C95EE7CED3276D19 /* wk.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,20 +385,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A76B1FEB035166635BF9F24270A6159 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1796A5E40C215A5D33F4779FC2382178 /* SidePanel-dummy.m in Sources */,
-				019B7D97D90C73A9E1F503B23721C69E /* SidePanelController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0FA501325ABB56A4FA09D7D2EBFB2E8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2BCA6F3D408FA92C2E83C429693647F8 /* Pods-iOS Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB587BA5DF42026417F3AFBD5CC5BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				783677F224C73F04D12F86AEC0C2C39E /* SidePanel-dummy.m in Sources */,
+				F2D4287914DF1EDC0A2E86146B5DC785 /* SidePanelController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,7 +470,7 @@
 		};
 		0CA59E1F802DFD669FECE41E5B6FBAB5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94F65912178454153DDE3E4329793412 /* SidePanel.xcconfig */;
+			baseConfigurationReference = 65B5EDBFD597C7D76C063929F8C8ACCF /* SidePanel.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SidePanel";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -504,7 +487,7 @@
 		};
 		268A07DF3D9E148F29E94B95F93A88A4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94F65912178454153DDE3E4329793412 /* SidePanel.xcconfig */;
+			baseConfigurationReference = 65B5EDBFD597C7D76C063929F8C8ACCF /* SidePanel.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -680,7 +663,7 @@
 		};
 		8638D2AAC035467F5DAB97A89F2D202E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94F65912178454153DDE3E4329793412 /* SidePanel.xcconfig */;
+			baseConfigurationReference = 65B5EDBFD597C7D76C063929F8C8ACCF /* SidePanel.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -710,7 +693,7 @@
 		};
 		A5FFD34F81A5EEED3F31C85293692DD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94F65912178454153DDE3E4329793412 /* SidePanel.xcconfig */;
+			baseConfigurationReference = 65B5EDBFD597C7D76C063929F8C8ACCF /* SidePanel.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SidePanel";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
