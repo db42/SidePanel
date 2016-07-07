@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/SidePanel.svg?style=flat)](http://cocoadocs.org/docsets/SidePanel)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-<a href="placehold.it/400?text=Screen+shot"><img width=200 height=200 src="placehold.it/400?text=Screen+shot" alt="Screenshot" /></a>
+![Demo](Assets/sidepanel-demo-gif.gif)
 
 
 ## Example
