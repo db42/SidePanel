@@ -13,6 +13,7 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
   public var selectedViewController: UIViewController? {
     didSet {
       guard oldValue != self.selectedViewController else {
+        hideSidePanel()
         return
       }
       oldValue?.view.removeFromSuperview()
@@ -156,6 +157,9 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
     overlayView.hidden = true
     view.addSubview(overlayView)
     
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideSidePanel))
+    overlayView.addGestureRecognizer(tapGesture)
+
     let sideView = UIView(frame: CGRectMake(0 - sidePanelWidth, 0, sidePanelWidth, view.bounds.height))
     view.addSubview(sideView)
     
