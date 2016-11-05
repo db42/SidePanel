@@ -6,8 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/SidePanel.svg?style=flat)](http://cocoadocs.org/docsets/SidePanel)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-![Demo](Assets/sidepanel-demo-gif.gif)
-
+<img src="Assets/sidepanel-demo-gif.gif" height="540" align="center"/>
 
 ## Example
 
