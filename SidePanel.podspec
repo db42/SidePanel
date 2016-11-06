@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'SidePanel'
-  s.version = '0.5.0'
+  s.version = '0.5.1'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.summary = 'Google styled sidepanel written in swift'
 
