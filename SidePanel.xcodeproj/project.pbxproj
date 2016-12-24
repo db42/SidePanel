@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		10F4F74D1D25028D003713C3 /* SidePanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F4F74C1D25028D003713C3 /* SidePanelController.swift */; };
 		D9E066921CCECB3200E0D7CB /* wk.png in Resources */ = {isa = PBXBuildFile; fileRef = D9E066861CCECB3200E0D7CB /* wk.png */; };
-		D9FEF4BF1CCEBC0F0013FBDD /* PROJECT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FEF4B41CCEBC0D0013FBDD /* PROJECT.framework */; };
+		D9FEF4BF1CCEBC0F0013FBDD /* SidePanel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FEF4B41CCEBC0D0013FBDD /* SidePanel.framework */; };
 		D9FEF4C41CCEBC100013FBDD /* PROJECTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9FEF4C31CCEBC100013FBDD /* PROJECTTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +26,7 @@
 /* Begin PBXFileReference section */
 		10F4F74C1D25028D003713C3 /* SidePanelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelController.swift; sourceTree = "<group>"; };
 		D9E066861CCECB3200E0D7CB /* wk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wk.png; sourceTree = "<group>"; };
-		D9FEF4B41CCEBC0D0013FBDD /* PROJECT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PROJECT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9FEF4B41CCEBC0D0013FBDD /* SidePanel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SidePanel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FEF4B91CCEBC0D0013FBDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9FEF4BE1CCEBC0F0013FBDD /* PROJECTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PROJECTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9FEF4C31CCEBC100013FBDD /* PROJECTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PROJECTTests.swift; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9FEF4BF1CCEBC0F0013FBDD /* PROJECT.framework in Frameworks */,
+				D9FEF4BF1CCEBC0F0013FBDD /* SidePanel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +73,7 @@
 		D9FEF4B51CCEBC0D0013FBDD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9FEF4B41CCEBC0D0013FBDD /* PROJECT.framework */,
+				D9FEF4B41CCEBC0D0013FBDD /* SidePanel.framework */,
 				D9FEF4BE1CCEBC0F0013FBDD /* PROJECTTests.xctest */,
 			);
 			name = Products;
@@ -110,9 +110,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		D9FEF4B31CCEBC0D0013FBDD /* PROJECT */ = {
+		D9FEF4B31CCEBC0D0013FBDD /* SidePanel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D9FEF4C81CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "PROJECT" */;
+			buildConfigurationList = D9FEF4C81CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "SidePanel" */;
 			buildPhases = (
 				D9FEF4AF1CCEBC0D0013FBDD /* Sources */,
 				D9FEF4B01CCEBC0D0013FBDD /* Frameworks */,
@@ -123,9 +123,9 @@
 			);
 			dependencies = (
 			);
-			name = PROJECT;
+			name = SidePanel;
 			productName = PROJECT;
-			productReference = D9FEF4B41CCEBC0D0013FBDD /* PROJECT.framework */;
+			productReference = D9FEF4B41CCEBC0D0013FBDD /* SidePanel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D9FEF4BD1CCEBC0F0013FBDD /* PROJECTTests */ = {
@@ -177,7 +177,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D9FEF4B31CCEBC0D0013FBDD /* PROJECT */,
+				D9FEF4B31CCEBC0D0013FBDD /* SidePanel */,
 				D9FEF4BD1CCEBC0F0013FBDD /* PROJECTTests */,
 			);
 		};
@@ -223,7 +223,7 @@
 /* Begin PBXTargetDependency section */
 		D9FEF4C11CCEBC0F0013FBDD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D9FEF4B31CCEBC0D0013FBDD /* PROJECT */;
+			target = D9FEF4B31CCEBC0D0013FBDD /* SidePanel */;
 			targetProxy = D9FEF4C01CCEBC0F0013FBDD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -400,7 +400,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D9FEF4C81CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "PROJECT" */ = {
+		D9FEF4C81CCEBC100013FBDD /* Build configuration list for PBXNativeTarget "SidePanel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D9FEF4C91CCEBC100013FBDD /* Debug */,
