@@ -2,7 +2,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
 target 'iOS Example' do
-  pod 'SidePanel'
+#  pod 'SidePanel', :path => '../'
+  pod 'SidePanel', :path => '../'
 
   target 'Tests' do
     inherit! :search_paths
@@ -10,3 +11,4 @@ target 'iOS Example' do
     
   end
 end
+
