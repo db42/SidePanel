@@ -24,16 +24,16 @@
 
 import UIKit
 
-public class SidePanelController: UIViewController, UIGestureRecognizerDelegate {
+open class SidePanelController: UIViewController, UIGestureRecognizerDelegate {
   
-  public var selectedViewController: UIViewController? {
+  open var selectedViewController: UIViewController? {
     didSet {
       guard oldValue != self.selectedViewController else {
         hideSidePanel()
         return
       }
       oldValue?.view.removeFromSuperview()
-      oldValue?.willMoveToParentViewController(nil)
+      oldValue?.willMove(toParentViewController: nil)
       oldValue?.removeFromParentViewController()
       updateSelectedViewcontroller()
     }
@@ -41,50 +41,50 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
   
 
   let sideController: UIViewController
-  public var sidePanelWidth: CGFloat = 320.0
+  open var sidePanelWidth: CGFloat = 320.0
   
-  private weak var sidePanelView: UIView!
-  private weak var mainView: UIView?
-  private weak var overlayMainView: UIView!
-  private var hasLeftSwipeGestureStarted = false
-  private var shouldHideSidePanel = false
+  fileprivate weak var sidePanelView: UIView!
+  fileprivate weak var mainView: UIView?
+  fileprivate weak var overlayMainView: UIView!
+  fileprivate var hasLeftSwipeGestureStarted = false
+  fileprivate var shouldHideSidePanel = false
   
   func updateSelectedViewcontroller() {
     let mainViewController = (selectedViewController as? UINavigationController)?.topViewController ?? selectedViewController
-    if let navItem = mainViewController?.navigationItem where
+    if let navItem = mainViewController?.navigationItem,
       navItem.leftBarButtonItem == nil {
       let button = self.leftButton()
-      button.addTarget(self, action: #selector(showSidePanel), forControlEvents: .TouchUpInside)
+      button.addTarget(self, action: #selector(showSidePanel), for: .touchUpInside)
       navItem.leftBarButtonItem = UIBarButtonItem(customView: button)
     }
     
     if let svc = selectedViewController,
-      mainView = self.mainView {
+      let mainView = self.mainView {
       addChildViewController(svc)
       mainView.addSubview(svc.view)
-      svc.didMoveToParentViewController(self)
+      svc.didMove(toParentViewController: self)
       hideSidePanel()
     }
   }
   
-  public func leftButton() -> UIButton {
-    let button = UIButton(type: .System)
-    button.setTitle("Menu", forState: .Normal)
+  open func leftButton() -> UIButton {
+    let button = UIButton(type: .system)
+    button.setTitle("Menu", for: UIControlState())
     return button
   }
 
-  override public func viewDidLoad() {
+  override open func viewDidLoad() {
     super.viewDidLoad()
     updateSelectedViewcontroller()
 
     addChildViewController(sideController)
-    sideController.view.autoresizingMask = .None
+    sideController.view.autoresizingMask = UIViewAutoresizing()
     sideController.view.frame = sidePanelView.bounds
     sidePanelView.addSubview(sideController.view)
-    sideController.didMoveToParentViewController(self)
+    sideController.didMove(toParentViewController: self)
     
     let leftSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(handleSwipeGesture(_:)))
-    leftSwipeGesture.direction = .Left
+    leftSwipeGesture.direction = .left
     self.view.addGestureRecognizer(leftSwipeGesture)
     
     let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePan(_:)))
@@ -92,7 +92,7 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
     self.view.addGestureRecognizer(panGesture)
   }
   
-  public func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+  open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
     if let _ = otherGestureRecognizer as? UISwipeGestureRecognizer {
       return true
     } else {
@@ -100,7 +100,7 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
     }
   }
   
-  func handlePan(panGestureRecognizer: UIPanGestureRecognizer)  {
+  func handlePan(_ panGestureRecognizer: UIPanGestureRecognizer)  {
     guard hasLeftSwipeGestureStarted == true else {
       return
     }
@@ -109,16 +109,16 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
     
     let frame = sidePanelView.frame
     switch panGestureRecognizer.state {
-    case .Changed:
-      let panTranslation = panGestureRecognizer.translationInView(self.view)
-      let speed = panGestureRecognizer.velocityInView(self.view).x
+    case .changed:
+      let panTranslation = panGestureRecognizer.translation(in: self.view)
+      let speed = panGestureRecognizer.velocity(in: self.view).x
       if panTranslation.x <= 0 && abs(panTranslation.x) < frame.width {
-        sidePanelView.frame = CGRectMake(panTranslation.x, frame.minY, frame.width, frame.height)
+        sidePanelView.frame = CGRect(x: panTranslation.x, y: frame.minY, width: frame.width, height: frame.height)
       }
       shouldHideSidePanel = abs(panTranslation.x) > sidePanelWidth/2 || speed < -75.0
       let alpha = 0.1 * (frame.width + frame.minX)/frame.width
       overlayMainView.alpha = alpha
-    case .Ended:
+    case .ended:
       hasLeftSwipeGestureStarted = false
       shouldHideSidePanel ? hideSidePanel() : showSidePanel()
     default:
@@ -128,25 +128,25 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
   
   func hideSidePanel() {
     let frame = sidePanelView.frame
-    UIView.animateWithDuration(0.4, animations: {
-      self.sidePanelView.frame = CGRectMake(0 - frame.width, frame.minY, frame.width, frame.height)
+    UIView.animate(withDuration: 0.4, animations: {
+      self.sidePanelView.frame = CGRect(x: 0 - frame.width, y: frame.minY, width: frame.width, height: frame.height)
       self.overlayMainView.alpha = 0
-      }) { finished  in
-      self.overlayMainView.hidden = true
-    }
+      }, completion: { finished  in
+      self.overlayMainView.isHidden = true
+    }) 
   }
   
   func showSidePanel() {
     let frame = sidePanelView.frame
-    overlayMainView.hidden = false
-    UIView.animateWithDuration(0.4) {
-      self.sidePanelView.frame = CGRectMake(0, frame.minY, frame.width, frame.height)
+    overlayMainView.isHidden = false
+    UIView.animate(withDuration: 0.4, animations: {
+      self.sidePanelView.frame = CGRect(x: 0, y: frame.minY, width: frame.width, height: frame.height)
       self.overlayMainView.alpha = 0.1
-    }
+    }) 
   }
   
-  func handleSwipeGesture(gestureRecognizer: UISwipeGestureRecognizer) {
-    if gestureRecognizer.direction == .Left {
+  func handleSwipeGesture(_ gestureRecognizer: UISwipeGestureRecognizer) {
+    if gestureRecognizer.direction == .left {
       hasLeftSwipeGestureStarted = true
       return
     } else {
@@ -156,27 +156,27 @@ public class SidePanelController: UIViewController, UIGestureRecognizerDelegate 
 
   public init(sideController: UIViewController) {
     self.sideController = sideController
-    super.init(nibName: nil, bundle: NSBundle.mainBundle())
+    super.init(nibName: nil, bundle: Bundle.main)
   }
   
-  override public func loadView() {
-    let view = UIView(frame: UIScreen.mainScreen().bounds)
-    view.backgroundColor = UIColor.whiteColor()
+  override open func loadView() {
+    let view = UIView(frame: UIScreen.main.bounds)
+    view.backgroundColor = UIColor.white
     
     let mainView = UIView(frame: view.bounds)
-    mainView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
+    mainView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     view.addSubview(mainView)
     
     let overlayView = UIView(frame: view.bounds)
-    overlayView.backgroundColor = UIColor.blackColor()
-    overlayView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-    overlayView.hidden = true
+    overlayView.backgroundColor = UIColor.black
+    overlayView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+    overlayView.isHidden = true
     view.addSubview(overlayView)
     
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideSidePanel))
     overlayView.addGestureRecognizer(tapGesture)
 
-    let sideView = UIView(frame: CGRectMake(0 - sidePanelWidth, 0, sidePanelWidth, view.bounds.height))
+    let sideView = UIView(frame: CGRect(x: 0 - sidePanelWidth, y: 0, width: sidePanelWidth, height: view.bounds.height))
     view.addSubview(sideView)
     
     self.mainView = mainView
