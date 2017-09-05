@@ -21,8 +21,8 @@ class SideViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
   
-  override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-    if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
+  override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
       let vc = indexPath.row == 0 ? appDelegate.vc1 : appDelegate.vc2
       appDelegate.sidePanelController?.selectedViewController = vc
     }
