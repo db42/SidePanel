@@ -57,7 +57,7 @@ $ brew install carthage
 To integrate SidePanel into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "fulldecent/SidePanel" ~> 0.1
+github "db42/SidePanel" ~> 0.6.1
 ```
 
 Run `carthage update` to build the framework and drag the built `SidePanel.framework` into your Xcode project.
